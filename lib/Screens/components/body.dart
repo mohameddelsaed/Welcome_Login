@@ -4,6 +4,8 @@ import 'package:welcome_login/Screens/components/background.dart';
 import '../../widgets/Elevated_Button.dart';
 
 class Body extends StatelessWidget {
+  const Body({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -20,10 +22,10 @@ class Body extends StatelessWidget {
               'assets/icon/chat.svg',
               height: size.height * 0.4,
             ),
-            SizedBox(height: 35,),
-            RoundedButton(),
-            SizedBox(height: 15,),
-            RoundButton(),
+            const SizedBox(height: 35,),
+            const RoundedButton(),
+            const SizedBox(height: 15,),
+            const RoundButton(),
           ],
         ),
       ),
