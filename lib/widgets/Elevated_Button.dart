@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:welcome_login/Screens/login/Login_Screen.dart';
 
 import '../constants.dart';
 
@@ -31,7 +32,10 @@ class RoundedButton extends StatelessWidget {
       width: size.width * 0.8,
       child: ElevatedButton(
         style: buttonPrimary,
-        onPressed: (){},
+        onPressed: (){
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context){return LoginScreen();}));
+        },
         child: const Text(
           'LOGIN',
         ),
